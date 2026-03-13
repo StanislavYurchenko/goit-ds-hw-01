@@ -1,5 +1,33 @@
+# Personal Assistant
 
-# goit-algo-hw-08: Address Book Management System
+This is a personal assistant application from the Core project homework.
+
+## Setup (Task 1)
+
+Use Pipenv to create a virtual environment with Python 3.14.
+
+1. Install Pipenv if not installed: `pip install pipenv`
+2. Create the environment: `pipenv --python 3.14`
+3. Install dependencies: `pipenv install`
+4. Activate the environment: `pipenv shell`
+
+The Pipfile specifies python_version = "3.14" and lists dependencies.
+
+## Docker (Task 2)
+
+Build and run the application in a Docker container.
+
+1. Build the image: `docker build -t personal-assistant .`
+2. Run: `docker run -it personal-assistant /bin/bash`
+3. Inside the container, run: `python3 main.py`
+--or--
+1. Build the image: `docker build -t personal-assistant .`
+2. Run: `docker run -it personal-assistant`
+
+The Dockerfile uses Python 3.14-slim, installs Pipenv, copies Pipfile and Pipfile.lock, installs dependencies, copies the app, and sets CMD to run main.py.
+
+
+# Address Book Management System
 
 A Python-based contact management system that allows users to store, organize, and manage contact information including names, phone numbers, and birthdays.
 
