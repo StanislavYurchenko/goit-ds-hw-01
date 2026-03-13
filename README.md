@@ -20,7 +20,9 @@ Build and run the application in a Docker container.
 1. Build the image: `docker build -t personal-assistant .`
 2. Run: `docker run -it personal-assistant /bin/bash`
 3. Inside the container, run: `python3 main.py`
+
 --or--
+
 1. Build the image: `docker build -t personal-assistant .`
 2. Run: `docker run -it personal-assistant`
 
